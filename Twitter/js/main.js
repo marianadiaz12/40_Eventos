@@ -6,7 +6,7 @@ function newElement() {
     if (textValue === '') {
         alert("No puedes agregar una tarea vacia");
     } else {
-        document.getElementById("tareas").appendChild(li);
+        document.getElementById("lista").appendChild(li);
     }
     document.getElementById("tarea").value = "";
 
@@ -24,4 +24,11 @@ function newElement() {
             div.style.display = "none";
             }
         }
+
+    var list = document.querySelector('ul');// El check subrayado
+    list.addEventListener('click', function(ev)  {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+        }
+    }, false);
 }

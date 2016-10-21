@@ -1,128 +1,39 @@
-/*Colores para letras*/
-.white{
-	color: white;
-}
-.azul{
-	color:#61C2FC;
-}
-.fondo{
-	background-image: url("../image/large.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.texim{
-	display: inline-block;
-    padding-top: 3%;
-    color: #73B7FF;
-    font-size: 2.7rem;
-}
-.ser{
-	border-radius: 50%;
-	padding: 5%;
-	box-shadow: 3px 2px 5px #999;
-}
-.im{
-	width: 40%;
-}
-.video{
-	width: 100%;
-}
-.navbar .navbar-toggle .icon-bar {
-  background-color: # ff0000;
-}
-.sec2{
-	background-image: url("../image/sec-2.jpg");
-	background-repeat: no-repeat;
-	background-size: 95%;
-	opacity: 0.7;
-}
-.icon{
-	display: block;
-	position: relative;
-	border-radius: 50%;
-	padding: 2%;
-	background-color: #0369B9;
-	margin-left: 90%;
-	margin-top: 10%;
-}
-.azulback{
-	background-color: #0369B9;
-}
-.marback{
-	background-color: #080A29;
-}
-/*Flecha sobre el hr*/
-#sep {
-	padding: 4% 0%;
-	position: relative;
-}
-#sep img{
-	position: absolute;
-	left:45%;
-	top:50%;
-	transform: translateY(-50%);
-}
-/*espacion*/
-.mr-t{
-	margin-top: 5%;
-}
-.pd{
-	padding: 10%;
+/*Hace que el punto de la lista no salga*/
+ul {
+    padding: 0%;
+    list-style:none;
 }
 
-.tamr{
-	font-size: 1.5em;
-}
-/*Efectos*/
-.move{
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-.move:hover{
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-       -o-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-.move{
-  	-webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.move:hover{
-  	border-radius: 50%;
-  	background-color: red;
-  	-webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-.focus {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+/*Estilo en las tareas*/
+ul li {
+    border: 1px solid #567fef;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #A9D0F5;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.focus:hover {
-  border: 70px solid #000;
-  border-radius: 50%;
+/*Las siguite tarea tien un color distinto*/
+ul li:nth-child(odd) {
+    border: 1px solid #A9D0F5 ;
+    background: #ddf6ff;
 }
-.ef{
-    border: 2px solid #ccc;
-    -webkit-transition: margin 0.5s ease-out;
-    -moz-transition: margin 0.5s ease-out;
-    -o-transition: margin 0.5s ease-out;
+
+/*Seleccionamos la tarea y se subraya*/
+ul li.checked {
+    text-decoration: line-through;
 }
-.ef:hover {
-    margin-top: 2%;
+
+.tareas{
+  margin-top: 5%;
+}
+.mg-btn{
+  margin-top: 1%;
 }

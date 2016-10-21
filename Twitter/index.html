@@ -1,52 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<title>Twitter</title>
+		<meta charset="UTF-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>TodoApp</title> 
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     	<link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
 	</head>
-	<body>
-		<div class="container-fluid">
+	<body >
+		<div class="container"> <!--El header y la sección de nueva tarea estaran en un container-->
 			<header>
-				<h1 class="text-center">TODO APP</h1>
+				<h2 class="text-center">TODO APP</h2>
 			</header>
-			<section>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-			<div class="form-group">
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<button class="btn submit-btn" type="submit" id="agregar"><span class="glyphicon glyphicon-cog"></span>Agregar</button>
-		</section>
+			<section><!--Sección de agregar una nueva tarea-->
+				<textarea class="form-control" rows="5" id="tarea" placeholder="Añade tu nueva tarea"></textarea> <!--Cuadro donde el usuario escribira su tarea-->
+				<button type="button" class="btn btn-primary mg-btn" onclick="newElement()"><span class="glyphicon glyphicon-plus"></span> Añadir</button> <!--Button que agregara una tarea con el onclick y función newElement()-->	
+			</section>
+			<section><!--Sección donde se iran anidando las tareas-->
+				<h4 class="tareas">Tareas Pendientes</h4>
+				<ul id="lista"></ul> <!--Se iran agregando las tareas-->
+			</section>
 		</div>
+	 	<script type='text/javascript' src='js/main.js'></script>
 	</body>
 </html>

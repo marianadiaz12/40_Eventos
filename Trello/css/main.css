@@ -1,3 +1,10 @@
 *{
   background-color: #045FB4;
+  color: white;
 }
+ #añadirLista{
+ 	margin-top: 2%;
+ }
+ #lista{
+ 	float: left;
+ }

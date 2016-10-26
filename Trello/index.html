@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 	  	<meta charset="UTF-8"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +10,16 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<img src="img/trello.png" class="img-responsive">
-			<input type="button" id="añadirLista" onclick="newList()" value="Añadir Lista">
-			<div id= "lista">
-				<button id="añadirTarjeta">Añadir Tarjeta...</button>
-			</div>
+		 	<section><!--Primera sección donde tiene el primer boton-->
+		 	<img src="img/trello.png" class="img-responsive">
+		 	<div id="inli">
+				<button id="añadirLista" class="btn btn-primary" onclick="newList()">Añadir una lista</button>
+		 	</div>
+		 	</section>
+			<section><!--Seccion de las listas-->
+				<div id= "lista"></div>
+			</section>
 		</div>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
-
-

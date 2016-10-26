@@ -5,15 +5,17 @@ function newList() {
     var inputTitulo = document.createElement("input");
     inputTitulo.setAttribute("placeholder", "Añadir Lista...");
     var button = document.createElement("button");
-    button.setAttribute("type", "button");
-    button.setAttribute("value", "Guardar");
+    button.appendChild(document.createTextNode("Guardar"));
     button.setAttribute("id", "guardar");
     button.setAttribute("class", "btn btn-success");
     inli.replaceChild(cajaLista, añadirLista);
     lista.appendChild(cajaLista);
     cajaLista.appendChild(inputTitulo);
     cajaLista.appendChild(button);
-    button.appendChild(document.createTextNode("Guardar"));
+
+    if(inputTitulo.value === null){
+    	alert("Ingresa un lista");
+    }
 
     guardar.addEventListener("click", function(e){
 	var textarea = document.createElement("textarea");
